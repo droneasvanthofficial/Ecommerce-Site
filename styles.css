@@ -1,0 +1,44 @@
+:root {
+  --lavender-light: #e6e6fa;
+  --lavender-medium: #9370db;
+  --lavender-dark: #8a2be2;
+}
+
+body {
+  background-color: var(--lavender-light);
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--lavender-medium);
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.btn-primary {
+  background-color: var(--lavender-dark);
+  border-color: var(--lavender-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--lavender-medium);
+  border-color: var(--lavender-medium);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: var(--lavender-medium);
+  color: white;
+  padding: 20px 0;
+}
+

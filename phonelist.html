@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Lavender Electronics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --lavender-light: #E6E6FA;
+            --lavender-medium: #9370DB;
+            --lavender-dark: #8A2BE2;
+        }
+
+        body {
+            background-color: var(--lavender-light);
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--lavender-medium);
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .btn-primary {
+            background-color: var(--lavender-dark);
+            border-color: var(--lavender-dark);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--lavender-medium);
+            border-color: var(--lavender-medium);
+            transform: scale(1.1);
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--lavender-medium);
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lavender Electronics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Our Mobile Collections</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="iphone5pro.jpg" class="card-img-top" alt="iPhone 15 Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 15 Pro</h5>
+                        <p class="card-text">₹1,34,999</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-id="1" data-name="iPhone 15 Pro" data-price="134999">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="s23.jpg" class="card-img-top" alt="Samsung Galaxy S23 Ultra">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy S23 Ultra</h5>
+                        <p class="card-text">₹1,24,999</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-id="2" data-name="Samsung Galaxy S23 Ultra" data-price="124999">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="11 pro.jpg" class="card-img-top" alt="OnePlus 11 Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">OnePlus 11 Pro</h5>
+                        <p class="card-text">₹69,999</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-id="3" data-name="OnePlus 11 Pro" data-price="69999">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lavender Electronics is your one-stop shop for all electronic needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Email: info@lavenderelectronics.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>Facebook | Twitter | Instagram</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
